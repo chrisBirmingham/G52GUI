@@ -1,0 +1,14 @@
+#backwardsButton{
+	-fx-fill: white;
+	-fx-stroke: black;
+}
+
+#forwardsButton{
+	-fx-fill: white;
+	-fx-stroke: black;
+}
+
+#playPauseButton{
+	-fx-fill: white;
+	-fx-stroke: black;
+}

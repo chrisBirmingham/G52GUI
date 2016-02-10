@@ -1,0 +1,6 @@
+.root{
+	-fx-background-color: white;
+	-fx-font: 12pt "Arial";
+	-fx-text-fill: black;
+	-fx-font-weight: bold; 
+}

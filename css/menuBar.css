@@ -1,0 +1,9 @@
+.menu-bar{
+	-fx-background-color: white;
+	-fx-border-color: white white black white;
+} 
+
+.context-menu .label {
+ 	-fx-font: 12pt "Arial";
+ 	-fx-font-weight: normal;
+}

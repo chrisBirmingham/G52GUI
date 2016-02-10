@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="100.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <VBox>
+         <children>
+            <MenuBar prefHeight="24.0" prefWidth="820.0" >
+              <menus >
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                  	 <MenuItem fx:id="addMusic" mnemonicParsing="false" onAction="#addMusic" text="Add Music" />
+                  	 <MenuItem fx:id="editMusic" mnemonicParsing="false" onAction="#editMusic" text="Edit Music" />
+                  	 <MenuItem fx:id="changeMusicDirectory" mnemonicParsing="false" onAction="#changeMusicDirectory" text="Change Music Directory" />
+                    <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeProgram" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" onAction="#showAboutBox" text="About" />
+                     <MenuItem fx:id="license" mnemonicParsing="false" onAction="#showLicenseBox" text="License" />
+                     <MenuItem fx:id="help" mnemonicParsing="false" onAction="#showHelpBox" text="Help" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ImageView fitHeight="81.0" fitWidth="820.0" pickOnBounds="true">
+               <image>
+                  <Image fx:id="banner" url="/images/banner.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</HBox>

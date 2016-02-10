@@ -1,0 +1,20 @@
+.label{
+	-fx-font: 12pt "Arial";
+	-fx-text-fill: black;
+	-fx-font-weight: bold; 
+	-fx-text-alignment: center;
+	-fx-underline: true ;
+}
+
+.split-pane{
+	-fx-background-color: white;
+	-fx-border-color: black white black white;
+}
+
+.scroll-pane{
+	-fx-background-color:black;
+}
+
+.grid-pane{
+	-fx-border-color: white;
+}

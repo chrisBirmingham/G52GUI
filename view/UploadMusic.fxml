@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="120.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UploadMusicController">
+   <children>
+      <Label layoutX="28.0" layoutY="22.0" prefHeight="20.0" prefWidth="200.0" text="Please pick a song to upload">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox layoutX="134.0" layoutY="50.0" spacing="30.0">
+         <children>
+            <Button fx:id="uploadFile" layoutX="55.0" layoutY="100.0" mnemonicParsing="false" onAction="#addMusic" text="Upload File" />
+            <Button fx:id="cancel" layoutX="148.0" layoutY="100.0" mnemonicParsing="false" onAction="#removeBox" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

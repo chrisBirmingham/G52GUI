@@ -1,0 +1,16 @@
+.table-cell{
+	-fx-font-size: 10pt;
+    -fx-font-weight: normal;
+    -fx-border-color: black;
+    -fx-border-width: 0.3pt;
+}
+
+.table-view{
+	-fx-border-color: black;
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-selection-bar;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: white;
+}

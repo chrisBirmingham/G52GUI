@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlayMusicController">
+   <children>
+          <AnchorPane fx:id="playMusicPane" minHeight="0.0" minWidth="0.0" prefHeight="63.0" prefWidth="816.0">
+               <children>
+                  <Label fx:id="songLabel" alignment="CENTER" layoutX="171.0" layoutY="14.0" prefHeight="42.0" prefWidth="474.0" text="Not Playing" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Line endX="170.0" layoutX="408.0" layoutY="66.0" startX="-170.0" />
+                  <Circle fx:id="backwardsButton" layoutX="486.0" layoutY="109.0" onMouseClicked="#getPreviousSong" radius="34.0"  strokeType="INSIDE" />
+                  <Circle fx:id="playPauseButton"  layoutX="408.0" layoutY="109.0" onMouseClicked="#playPauseSong" radius="34.0"  strokeType="INSIDE" />
+                  <Circle fx:id="forwardsButton"  layoutX="330.0" layoutY="109.0" onMouseClicked="#getNextSong" radius="34.0"  strokeType="INSIDE" />
+            <ImageView fx:id="playPauseImage" fitHeight="46.0" fitWidth="46.0" layoutX="385.0" layoutY="85.0" onMouseClicked="#playPauseSong" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="backwardsImage" fitHeight="46.0" fitWidth="46.0" layoutX="307.0" layoutY="85.0" onMouseClicked="#getPreviousSong" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="forwardsImage" fitHeight="46.0" fitWidth="46.0" layoutX="463.0" layoutY="85.0" onMouseClicked="#getNextSong" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+   </children>
+</HBox>
